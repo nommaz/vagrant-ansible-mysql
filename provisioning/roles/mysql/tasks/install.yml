@@ -17,3 +17,9 @@
   service:
     name: mysql
     state: started
+
+- name: allow sql port
+  ufw: >
+    rule=allow 
+    proto=tcp
+    to_port={{ mysql_port }}

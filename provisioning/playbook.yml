@@ -1,0 +1,11 @@
+---
+
+#########################
+# MySQL                 #
+#########################
+
+- hosts: master
+  sudo: true
+  tags: mysql
+  roles:
+    - mysql
